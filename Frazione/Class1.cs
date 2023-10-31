@@ -49,34 +49,34 @@ namespace Frazione
         }
 
         //metodo di somma di due frazioni
-        public double Somma(double nom, double denom)
+        public double []Somma(double nom, double denom)
         {
-            return semplificaFrazione(nom, denom) + semplificaFrazione(Nominatore, Denominatore);
+            return desemplificaFrazione(semplificaFrazione(nom, denom) + semplificaFrazione(Nominatore, Denominatore));
         }
 
         //metodo di sottrazione di due frazioni
-        public double sottrazione(double nom, double denom)
+        public double []sottrazione(double nom, double denom)
         {
             if (semplificaFrazione(nom, denom) < semplificaFrazione(Nominatore, Denominatore))
             {
-                return semplificaFrazione(Nominatore, Denominatore) - semplificaFrazione(nom, denom);
+                return desemplificaFrazione(semplificaFrazione(Nominatore, Denominatore) - semplificaFrazione(nom, denom));
             }
             else
             {
-                return semplificaFrazione(nom, denom) - semplificaFrazione(Nominatore, Denominatore);
+                return desemplificaFrazione(semplificaFrazione(nom, denom) - semplificaFrazione(Nominatore, Denominatore));
             }
         }
 
         //metodo di moltiplicazione tra due frazione
-        public double moltiplicazione(double nom, double denom)
+        public double []moltiplicazione(double nom, double denom)
         {
-            return semplificaFrazione(nom, denom) * semplificaFrazione(Nominatore, Denominatore);
+            return desemplificaFrazione(semplificaFrazione(nom, denom) * semplificaFrazione(Nominatore, Denominatore));
         }
 
         //metodo di divisione tr due frazioni
-        public double divisione(double nom, double denom)
+        public double []divisione(double nom, double denom)
         {
-            return semplificaFrazione(nom, denom) / semplificaFrazione(Nominatore, Denominatore);
+            return desemplificaFrazione(semplificaFrazione(nom, denom) / semplificaFrazione(Nominatore, Denominatore));
         }
 
         //properties attributi
