@@ -38,7 +38,6 @@ namespace Frazione
             return semplificaFrazione(nom, denom) + semplificaFrazione(Nominatore, Denominatore);
         }
 
-
         //metodo di sottrazione di due frazioni
         public double sottrazione(double nom, double denom)
         {
@@ -50,6 +49,12 @@ namespace Frazione
             {
                 return semplificaFrazione(nom, denom) - semplificaFrazione(Nominatore, Denominatore);
             }
+        }
+
+        //metodo di moltiplicazione tra due frazione
+        public double moltiplicazione(double nom, double denom)
+        {
+            return semplificaFrazione(nom, denom) * semplificaFrazione(Nominatore, Denominatore);
         }
 
         //properties attributi
