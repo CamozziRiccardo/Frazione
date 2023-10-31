@@ -38,6 +38,20 @@ namespace Frazione
             return semplificaFrazione(nom, denom) + semplificaFrazione(Nominatore, Denominatore);
         }
 
+
+        //metodo di sottrazione di due frazioni
+        public double sottrazione(double nom, double denom)
+        {
+            if (semplificaFrazione(nom, denom) < semplificaFrazione(Nominatore, Denominatore))
+            {
+                return semplificaFrazione(Nominatore, Denominatore) - semplificaFrazione(nom, denom);
+            }
+            else
+            {
+                return semplificaFrazione(nom, denom) - semplificaFrazione(Nominatore, Denominatore);
+            }
+        }
+
         //properties attributi
         double Denominatore
         {
