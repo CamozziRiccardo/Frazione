@@ -57,6 +57,12 @@ namespace Frazione
             return semplificaFrazione(nom, denom) * semplificaFrazione(Nominatore, Denominatore);
         }
 
+        //metodo di divisione tr due frazioni
+        public double divisione(double nom, double denom)
+        {
+            return semplificaFrazione(nom, denom) / semplificaFrazione(Nominatore, Denominatore);
+        }
+
         //properties attributi
         double Denominatore
         {
