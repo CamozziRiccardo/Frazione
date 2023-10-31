@@ -32,6 +32,22 @@ namespace Frazione
             return nom / denom;
         }
 
+        //metodo che trasforma un numero decimale in una frazione
+        private double[] desemplificaFrazione(double decimale)
+        {
+            double[] fraz = new double[1];
+            string str = decimale.ToString();
+            double moltiplicatore = 1;
+            for (int i = 0; i < str.Length; i++)
+            {
+                moltiplicatore *= 10;
+            }
+            decimale *= moltiplicatore;
+            fraz[0] = decimale;
+            fraz[1] = moltiplicatore;
+            return fraz;
+        }
+
         //metodo di somma di due frazioni
         public double Somma(double nom, double denom)
         {
