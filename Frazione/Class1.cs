@@ -32,6 +32,12 @@ namespace Frazione
             return nom / denom;
         }
 
+        //metodo di somma di due frazioni
+        public double Somma(double nom, double denom)
+        {
+            return semplificaFrazione(nom, denom) + semplificaFrazione(Nominatore, Denominatore);
+        }
+
         //properties attributi
         double Denominatore
         {
