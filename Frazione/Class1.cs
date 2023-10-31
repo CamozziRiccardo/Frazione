@@ -32,37 +32,6 @@ namespace Frazione
             return nom / denom;
         }
 
-        //metodo di somma di due frazioni
-        public double Somma(double nom, double denom)
-        {
-            return semplificaFrazione(nom, denom) + semplificaFrazione(Nominatore, Denominatore);
-        }
-
-        //metodo di sottrazione di due frazioni
-        public double sottrazione(double nom, double denom)
-        {
-            if (semplificaFrazione(nom, denom) < semplificaFrazione(Nominatore, Denominatore))
-            {
-                return semplificaFrazione(Nominatore, Denominatore) - semplificaFrazione(nom, denom);
-            }
-            else
-            {
-                return semplificaFrazione(nom, denom) - semplificaFrazione(Nominatore, Denominatore);
-            }
-        }
-
-        //metodo di moltiplicazione tra due frazione
-        public double moltiplicazione(double nom, double denom)
-        {
-            return semplificaFrazione(nom, denom) * semplificaFrazione(Nominatore, Denominatore);
-        }
-
-        //metodo di divisione tr due frazioni
-        public double divisione(double nom, double denom)
-        {
-            return semplificaFrazione(nom, denom) / semplificaFrazione(Nominatore, Denominatore);
-        }
-
         //properties attributi
         double Denominatore
         {
