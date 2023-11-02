@@ -9,8 +9,8 @@ namespace Frazione
     internal class Frazione
     {
         //attributi
-        private double _nominatore;
-        private double _denominatore;
+        protected double _nominatore;
+        protected double _denominatore;
 
         //costruttore
         public Frazione()
@@ -27,7 +27,7 @@ namespace Frazione
         }
 
         //metodo di semplificazione della frazione
-        private double semplificaFrazione(double nom, double denom)
+        protected virtual double semplificaFrazione(double nom, double denom)
         {
             return nom / denom;
         }
